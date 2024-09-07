@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php
+
+get_header(); ?>
 
 <main>
     <div class="container max-w-6xl mx-auto">
