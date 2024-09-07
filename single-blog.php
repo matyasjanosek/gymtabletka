@@ -1,4 +1,7 @@
 <?php
+/*
+ Template Name: Single Blog Page
+*/
 
 get_header(); ?>
 
