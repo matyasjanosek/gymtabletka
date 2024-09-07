@@ -7,21 +7,29 @@ get_header(); ?>
 
 <main>
     <div class="container max-w-6xl mx-auto">
-        <!-- Banner Image -->
+        <!-- Custom Banner Image -->
         <div class="py-8">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bannerImage.jpg" alt="Banner" class="w-full h-[75vh]">
+            <?php
+            // Fetch custom banner image from ACF
+            $banner_image = get_field('banner_image');
+            if ($banner_image) : ?>
+                <img src="<?php echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="w-full h-[75vh]">
+            <?php else : ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/default-banner.jpg" alt="Default Banner" class="w-full h-[75vh]">
+            <?php endif; ?>
         </div>
 
-        <!-- Category Tags -->
+        <!-- Custom Category Tags -->
         <div class="flex text-[#007db5] uppercase">
             <?php
-            // Display categories assigned to the post
-            $categories = get_the_category();
-            if ( ! empty( $categories ) ) {
-                foreach( $categories as $category ) {
-                    echo '<p class="font-bold">' . esc_html( $category->name ) . ',&nbsp;</p>';
-                }
-            }
+            // Fetch custom category tags from ACF
+            $category_tags = get_field('category_tags');
+            if ($category_tags) :
+                $tags_array = explode(',', $category_tags); // assuming the tags are comma-separated
+                foreach ($tags_array as $tag) : ?>
+                    <p class="font-bold"><?php echo esc_html(trim($tag)); ?>,&nbsp;</p>
+                <?php endforeach;
+            endif;
             ?>
         </div>
 
