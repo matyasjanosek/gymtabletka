@@ -18,3 +18,17 @@ function nase_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'nase_enqueue_styles' );
 
+function disable_gutenberg_for_home_page( $use_block_editor, $post_type ) {
+    if ( 'page' === $post_type ) {
+        // Get the current post
+        $post_id = isset( $_GET['post'] ) ? $_GET['post'] : $_POST['post_ID'] ?? null;
+        
+        // Check if the current post uses the "Home Page" template
+        if ( $post_id && 'Home Page' === get_page_template_slug( $post_id ) ) {
+            return false;
+        }
+    }
+
+    return $use_block_editor;
+}
+add_filter( 'use_block_editor_for_post_type', 'disable_gutenberg_for_home_page', 10, 2 );
