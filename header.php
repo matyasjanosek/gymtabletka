@@ -25,7 +25,7 @@
                     <a href="<?php echo esc_url(home_url('/sport-nutrition')); ?>" class="font-bold text-white">Sport nutrition</a>
                     <a href="<?php echo esc_url(home_url('/healthy-foods')); ?>" class="font-bold text-white">Healthy foods</a>
                     <a href="<?php echo esc_url(home_url('/sportswear')); ?>" class="font-bold text-white">Sportswear</a>
-                    <a href="<?php echo esc_url(home_url('/page-blog.php')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
+                    <a href="<?php echo esc_url(home_url('../page-blog.php')); ?>" class="font-bold text-[#F9BF3B]">Blog</a>
                 </div>
 
             </div>
