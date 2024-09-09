@@ -32,6 +32,7 @@
             <div class="flex space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/userIcon.png" alt="UserIcon" class="w-auto h-10">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/basketIcon.png" alt="BasketIcon" class="w-auto h-10">
+                <ul><?php pll_the_languages(); ?></ul>
             </div>
         </div>
     </div>
