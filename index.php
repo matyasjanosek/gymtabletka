@@ -11,6 +11,8 @@ get_header();
     <div>
         <?php get_template_part('carousel'); ?>
         
+        <?php the_field('content'); ?>
+
         <div class="bg-[#F0F2F5] py-4">
             <div class="container flex justify-between max-w-5xl mx-auto">
                 <div class="flex items-center space-x-4">
