@@ -27,16 +27,9 @@ Template Name: Footer
             <a href="#"><?php the_field('term7'); ?></a>            
         </div>
         <div class="flex flex-col justify-between text-white">
-            <p class="pb-2 text-lg font-bold">
-                New from fitness world right in your e-mail
-            </p>
-            <div class="flex">
-                <input type="text" class="w-[20rem] p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your e-mail adress...">
-                <button class="bg-[#FF8B00] text-white rounded-lg px-5 py-3 font-bold ml-4">
-                    SEND
-                </button>
+        
             </div>
-            <p class="text-lg font-bold text-[#bdc1c5]">
+            <p class="text-lg font-bold">
                 Need help buying
             </p>
             <p class="text-[#bdc1c5]">
