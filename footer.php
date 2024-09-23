@@ -17,7 +17,7 @@ Template Name: Footer
 <footer class="bg-[#232F3E] pt-8">
     <div class="container flex justify-between max-w-6xl mx-auto">
         <div class="flex flex-col space-y-1 text-[#bdc1c5]">
-            <p class="pb-1 text-lg font-bold text-white">Terms and conditions</p>
+            <p class="pb-1 text-lg font-bold text-white"> <?php the_field('terms_title'); ?></p>
             <a href="#">General Terms and Conditions</a>
             <a href="#">Security Policy</a>
             <a href="#">Cookie Policy</a>
