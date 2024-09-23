@@ -26,7 +26,7 @@ Template Name: Footer
             <a href="#"><?php the_field('term6'); ?></a>
             <a href="#"><?php the_field('term7'); ?></a>            
         </div>
-        <div class="flex flex-col justify-between text-white">
+        <div class="flex flex-col justify-start text-white">
             <p class="text-lg font-bold text-white">
                 Need help buying
             </p>
