@@ -18,13 +18,13 @@ Template Name: Footer
     <div class="container flex justify-between max-w-6xl mx-auto">
         <div class="flex flex-col space-y-1 text-[#bdc1c5]">
             <p class="pb-1 text-lg font-bold text-white"> <?php the_field('terms_title'); ?></p>
-            <a href="#">General Terms and Conditions</a>
-            <a href="#">Security Policy</a>
-            <a href="#">Cookie Policy</a>
-            <a href="#">Refund Policy</a>
-            <a href="#">Advertisements and Complaints</a>
-            <a href="#">Product Exchange</a>
-            <a href="#">Instructions for use</a>
+            <a href="#"><?php the_field('term1'); ?></a>
+            <a href="#"><?php the_field('term2'); ?></a>
+            <a href="#"><?php the_field('term3'); ?></a>
+            <a href="#"><?php the_field('term4'); ?></a>
+            <a href="#"><?php the_field('term5'); ?></a>
+            <a href="#"><?php the_field('term6'); ?></a>
+            <a href="#"><?php the_field('term7'); ?></a>            
         </div>
         <div class="flex flex-col justify-between text-white">
             <p class="pb-2 text-lg font-bold">
