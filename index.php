@@ -153,6 +153,7 @@ get_header();
                 <?php endfor; ?>
             </div>
         </div>
+        <?php echo do_shortcode('[contact-form-7 id="8702c0a" title="Contact form 1"]'); ?>
     </div>
 </main>
 
