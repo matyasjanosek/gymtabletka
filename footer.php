@@ -8,6 +8,10 @@
  * @subpackage Your_Theme_Name
  * @since Your_Theme_Version
  */
+
+ /*
+Template Name: Footer
+*/
 ?>
 
 <footer class="bg-[#232F3E] pt-8">
