@@ -44,4 +44,9 @@ a:hover {
     text-decoration: underline;
 }
 
+
+input[type="your-name"]
+{
+    font-weight: bold;
+}
 /* Add more custom styles as needed */
