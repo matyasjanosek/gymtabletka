@@ -9,6 +9,7 @@ get_header();
 
 <main>
     <div>
+        <?php get_template_part('carousel'); ?>
         
 
         <div class="bg-[#F0F2F5] py-4">
